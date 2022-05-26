@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+:root{
+
+}
+
+body{
+    zoom: 0.8;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg, #98c4d1, #C8E6EE, #DDF2F5 ) ;
+}
+
+main{
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
+    text-align: center;
+    border-radius: 16px; 
+    box-shadow: 2px 2px 5px #0000002d;
+}
+#imgTopo{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#planoPagamento{
+    text-align: center;
+    line-height: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 32px;
+    font-size: 1.3rem;
+}
+
+h1{
+    margin-bottom: 32px;
+}
+
+.content{
+    background-color: #e9e6e68e;
+    display: flex;
+    justify-content: space-between;
+    padding:5px 10px;
+    margin: 36px 16px; 
+    margin-bottom: 3rem;
+}
+
+.content > div{
+    display:flex;
+    gap: 24px;
+}
+
+.content  img{
+    height: 45px;
+    width: 45px;
+    margin-top: 5px;
+}
+
+.content a{
+    margin-top: 5px;
+}
+
+span{
+    color: #696868;
+}
+
+a{
+    color: #8a2be2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    position: relative;
+    top: -2px;
+    text-decoration: underline;
+}
+
+.button{
+    background:linear-gradient(45deg, #00faed, #befffc, #00faed) ;
+    background-size: 400% 400%;
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin: 36px 16px; 
+    animation: colors 2s ease infinite;
+    
+}
+
+@keyframes colors{
+    0%{
+
+        background-position: 0% 50%
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%
+    }
+}
+
+.button:hover{
+    text-decoration: none;
+    top: -4px;
+}
+
+section >p{
+    margin-bottom: 32px;
+}
+
+@media (max-width: 768px){
+    body{
+        zoom: 0.7;
+    }
+    main{
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+    #planoPagamento{
+        font-size: 23px;
+    }
+}
